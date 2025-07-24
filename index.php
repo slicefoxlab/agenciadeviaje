@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agencia de Viajes - SEMANA 6</title>
+  <title>Agencia de Viajes - SEMANA 8</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   
   <!-- ======================================
-       SEMANA 5 - Header con Título y Links
+       Header con Título y Links
        ====================================== -->
   <header>
-    <h1>🌎 Agencia de Viajes - SEMANA 6</h1>
+    <h1>🌎 Agencia de Viajes - SEMANA 8</h1>
     <nav class="header-links">
       <a href="productos.php">🗺️ Ver Paquetes</a>
       <a href="carrito.php">🛒 Ver Carrito</a>
@@ -20,14 +20,14 @@
   </header>
 
   <!-- ======================================
-       SEMANA 6 - Banner de OFERTA Parpadeante
+       Banner de OFERTA Parpadeante
        ====================================== -->
   <div class="banner-oferta">
     ¡OFERTA ESPECIAL! 30% de descuento en viajes a Brasil esta semana. Reserva ahora y vive la experiencia.
   </div>
 
   <!-- ======================================
-       SEMANA 6 - Menú Principal con iconos
+       Menú Principal con iconos
        ====================================== -->
   <nav class="menu-principal">
     <a href="index.php">🏠 Inicio</a>
@@ -41,10 +41,18 @@
   </nav>
 
   <!-- ======================================
-       SEMANA 5 - Contenido Principal
+       NUEVA SECCIÓN - Buscador de Vuelos
        ====================================== -->
   <main>
-    <!-- Buscador de Destinos -->
+    <section class="busqueda-vuelos">
+      <h2>🔎 Buscar Vuelos por Destino</h2>
+      <form action="buscar_vuelo.php" method="GET">
+        <input type="text" name="destino" placeholder="Ej: Valdivia, Osorno..." required>
+        <button type="submit">Buscar Vuelo</button>
+      </form>
+    </section>
+
+    <!-- Contenido anterior de Semana 5 -->
     <section class="busqueda">
       <h2>🔎 Buscar destino</h2>
       <form>
@@ -70,7 +78,7 @@
   </main>
 
   <!-- ======================================
-       SEMANA 5 - Footer
+       Footer
        ====================================== -->
   <footer>
     <p>© 2025 Agencia de Viajes. Todos los derechos reservados.</p>
@@ -78,5 +86,4 @@
   
 </body>
 </html>
-
 
