@@ -1,0 +1,217 @@
+/* ================================
+   ESTILOS GENERALES
+   ================================ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fbff;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header, footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #003366;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.header-links {
+  margin-top: 10px;
+}
+
+.header-links a {
+  color: gold;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* ================================
+   BANNER OFERTA PARPADEANTE
+   ================================ */
+.banner-oferta {
+  background-color: #d4f8d4;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  animation: blink 1.5s infinite;
+  border-radius: 6px;
+  color: #056608;
+  box-shadow: 0 0 5px #a6e0a6;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+/* ================================
+   MENÚ PRINCIPAL CON ICONOS
+   ================================ */
+.menu-principal {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #eaf4ff;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: #003366;
+  background: #fff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu-principal a:hover {
+  background: #cce6ff;
+  color: #004488;
+}
+
+.menu-principal i {
+  font-size: 1.2em;
+}
+
+/* ================================
+   CONTENIDO PRINCIPAL
+   ================================ */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #003366;
+}
+
+/* ================================
+   FORMULARIOS
+   ================================ */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form input, form button {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 1 150px;
+}
+
+form button {
+  background-color: #0055aa;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #004488;
+}
+
+/* ================================
+   BOTONES GENERALES
+   ================================ */
+button {
+  background-color: #ffb300;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffa000;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+/* ================================
+   Tarjetas de Productos (Paquetes)
+   ================================ */
+.productos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.producto-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  padding: 20px;
+  max-width: 250px;
+  flex: 1 1 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+}
+
+.producto-card h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.producto-card .precio {
+  font-weight: bold;
+  color: #0055aa;
+  margin: 10px 0;
+}
+
+.producto-card .btn {
+  background-color: #ffb300;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.producto-card .btn:hover {
+  background-color: #ffa000;
+}

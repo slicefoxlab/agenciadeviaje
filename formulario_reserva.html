@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Reserva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🗺️ Agencia de Viajes - Reserva</h1>
+    <nav class="header-links">
+      <a href="index.php">🏠 Inicio</a>
+      <a href="carrito.php">🛒 Ver Carrito</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Formulario para Agregar Reserva</h2>
+      <form action="insertar_reserva.php" method="POST" onsubmit="return validarReserva()">
+        <label>ID Cliente:</label>
+        <input type="number" name="id_cliente" id="id_cliente" required><br>
+
+        <label>Fecha de Reserva:</label>
+        <input type="date" name="fecha_reserva" id="fecha_reserva" required><br>
+
+        <label>ID Vuelo:</label>
+        <input type="number" name="id_vuelo" id="id_vuelo" required><br>
+
+        <label>ID Hotel:</label>
+        <input type="number" name="id_hotel" id="id_hotel" required><br>
+
+        <button type="submit">Agregar Reserva</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function validarReserva() {
+      if (
+        document.getElementById('id_cliente').value === '' ||
+        document.getElementById('fecha_reserva').value === '' ||
+        document.getElementById('id_vuelo').value === '' ||
+        document.getElementById('id_hotel').value === ''
+      ) {
+        alert('Por favor completa todos los campos.');
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
