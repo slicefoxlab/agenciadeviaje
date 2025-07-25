@@ -1,7 +1,4 @@
 # agenciadeviaje
-¡Entendido\! Para que tu `README.md` se vea más profesional y visualmente atractivo, podemos usar varios elementos de formato que ofrece Markdown, como insignias (badges), una tabla de contenidos y una estructura más organizada.
-
-Aquí tienes una versión mejorada. Simplemente copia y pega este código en tu archivo `README.md`.
 
 -----
 
