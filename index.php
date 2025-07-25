@@ -40,7 +40,7 @@
     <a href="consulta_reservas.php">📊 Consulta Avanzada de Reservas</a>
   </nav>
 
-  <!-- ======================================
+    <!-- ======================================
        NUEVA SECCIÓN - Buscador de Vuelos
        ====================================== -->
   <main>
