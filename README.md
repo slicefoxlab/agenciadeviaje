@@ -1,69 +1,69 @@
 # agenciadeviaje
-Agencia de Viajes - Proyecto de Programación Web II
-Este repositorio contiene el código fuente de una aplicación web para una agencia de viajes, desarrollada como parte de la asignatura Programación Web II. La aplicación permite la gestión y reserva de vuelos, hoteles y paquetes turísticos.
+¡Entendido\! Para que tu `README.md` se vea más profesional y visualmente atractivo, podemos usar varios elementos de formato que ofrece Markdown, como insignias (badges), una tabla de contenidos y una estructura más organizada.
 
-✨ Características Principales
-Gestión de Vuelos:
+Aquí tienes una versión mejorada. Simplemente copia y pega este código en tu archivo `README.md`.
 
-Formulario para agregar nuevos vuelos al sistema.
+-----
 
-Visualización de todos los vuelos registrados.
+# 🌎 Agencia de Viajes - Proyecto de Programación Web II
 
-Buscador de vuelos por destino.
+Aplicación web para la gestión de una agencia de viajes, desarrollada como parte de la asignatura Programación Web II. El proyecto demuestra funcionalidades de backend con PHP y una base de datos MySQL, junto con un flujo de trabajo colaborativo en GitHub.
 
-Gestión de Hoteles:
+-----
 
-Formulario para registrar nuevos hoteles.
+## 📖 Tabla de Contenidos
 
-Listado de hoteles disponibles en el sistema.
+  * [✨ Características Principales](https://www.google.com/search?q=%23-caracter%C3%ADsticas-principales)
+  * [🛠️ Tecnologías Utilizadas](https://www.google.com/search?q=%23-tecnolog%C3%ADas-utilizadas)
+  * [🚀 Instalación y Puesta en Marcha](https://www.google.com/search?q=%23-instalaci%C3%B3n-y-puesta-en-marcha)
+  * [📂 Estructura del Proyecto](https://www.google.com/search?q=%23-estructura-del-proyecto)
+  * [🤝 Colaboración](https://www.google.com/search?q=%23-colaboraci%C3%B3n)
 
-Sistema de Reservas:
+-----
 
-Formulario para crear nuevas reservas asociadas a clientes, vuelos y hoteles.
+## ✨ Características Principales
 
-Visualización de las últimas reservas realizadas.
+  * **✈️ Módulo de Vuelos:** Gestión completa de vuelos, incluyendo formularios de alta, listados y un buscador por destino.
+  * **🏨 Módulo de Hoteles:** Registro y visualización de hoteles disponibles en el sistema.
+  * **📝 Sistema de Reservas:** Creación y consulta de reservas, con una consulta avanzada para análisis de datos.
+  * **🛒 Carrito de Compras:** Funcionalidad completa para la gestión de paquetes turísticos (agregar, eliminar, vaciar).
 
-Consulta avanzada para ver qué hoteles tienen más de 2 reservas.
+-----
 
-Paquetes Turísticos:
+## 🛠️ Tecnologías Utilizadas
 
-Visualización de paquetes turísticos disponibles.
+  * **Lenguajes:** PHP, SQL, HTML5, CSS3, JavaScript.
+  * **Base de Datos:** MySQL.
+  * **Entorno de Servidor Local:** Se recomienda **XAMPP** para compatibilidad con Apache y MySQL.
 
-Carrito de compras funcional para agregar, eliminar y vaciar paquetes.
+-----
 
-🛠️ Tecnologías Utilizadas
-Frontend: HTML5, CSS3, JavaScript
+## 🚀 Instalación y Puesta en Marcha
 
-Backend: PHP
+Sigue estos pasos para ejecutar el proyecto en tu máquina local.
 
-Base de Datos: MySQL
+### **1. Prerrequisitos**
 
-Entorno de desarrollo: XAMPP (o similar)
+Asegúrate de tener instalado un entorno de servidor local como [XAMPP](https://www.apachefriends.org/index.html).
 
-🚀 Instalación y Puesta en Marcha
-Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
+### **2. Clonar el Repositorio**
 
-Clonar el Repositorio:
+Abre tu terminal y clona este repositorio en el directorio `htdocs` de tu XAMPP.
 
-Bash
-
+```bash
+cd C:/xampp/htdocs
 git clone https://github.com/slicefoxlab/agenciadeviaje.git
-Configurar el Entorno:
+```
 
-Mueve la carpeta clonada agenciadeviaje al directorio htdocs de tu instalación de XAMPP (o www si usas WAMP/MAMP).
+### **3. Configurar la Base de Datos**
 
-Inicia los servicios de Apache y MySQL desde el panel de control de XAMPP.
+  * Inicia los servicios de **Apache** y **MySQL** desde el panel de XAMPP.
+  * Ve a `http://localhost/phpmyadmin/` y crea una nueva base de datos llamada **`agencia`**.
+  * Importa el siguiente esquema SQL en tu nueva base de datos. Para ello, selecciona la base de datos `agencia`, ve a la pestaña `SQL` y ejecuta este código:
 
-Crear la Base de Datos:
+<!-- end list -->
 
-Abre tu navegador y ve a http://localhost/phpmyadmin/.
-
-Crea una nueva base de datos con el nombre agencia. El archivo db.php está configurado para conectarse a esta base de datos.
-
-Selecciona la base de datos agencia y ve a la pestaña SQL. Pega el siguiente código y ejecútalo para crear las tablas necesarias:
-
-SQL
-
+```sql
 CREATE TABLE HOTEL (
   id_hotel INT AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(255) NOT NULL,
@@ -97,19 +97,46 @@ CREATE TABLE RESERVA (
   FOREIGN KEY (id_vuelo) REFERENCES VUELO(id_vuelo),
   FOREIGN KEY (id_hotel) REFERENCES HOTEL(id_hotel)
 );
+```
 
--- Nota: La tabla CLIENTE se infiere de la tabla RESERVA.
--- Puedes agregar datos de ejemplo para probar la aplicación.
-Acceder a la Aplicación:
+### **4. Ejecutar la Aplicación**
 
-Una vez configurada la base de datos, abre tu navegador y visita:
-http://localhost/agenciadeviaje/
+Abre tu navegador web y navega a la siguiente URL para ver la aplicación en funcionamiento:
+**`http://localhost/agenciadeviaje/`**
 
-🤝 Colaboración
-Este proyecto utiliza un flujo de trabajo basado en GitHub para la colaboración, como parte de los requerimientos académicos.
+-----
 
-Ramas (Branches): Las nuevas funcionalidades se desarrollan en ramas separadas para no afectar la rama principal (main).
+## 📂 Estructura del Proyecto
 
-Pull Requests (PRs): Todos los cambios deben ser propuestos a través de un Pull Request para su revisión.
+```
+agenciadeviaje/
+├── 📄 agregar.php         # Lógica para añadir productos al carrito
+├── 📄 carrito.php         # Vista y gestión del carrito de compras
+├── 📄 consulta_reservas.php # Consulta avanzada de reservas
+├── 📄 db.php              # Configuración de la conexión a la BD
+├── 📄 eliminar.php        # Lógica para eliminar productos del carrito
+├── 📄 formulario_hotel.html # Formulario para agregar hoteles
+├── 📄 formulario_reserva.html # Formulario para agregar reservas
+├── 📄 formulario_vuelo.html # Formulario para agregar vuelos
+├── 📄 index.php           # Página principal y buscador
+├── 📄 insertar_hotel.php  # Lógica para insertar hoteles en la BD
+├── 📄 insertar_reserva.php # Lógica para insertar reservas en la BD
+├── 📄 insertar_vuelo.php  # Lógica para insertar vuelos en la BD
+├── 📄 lista_productos.php # Array con los paquetes turísticos
+├── 📄 productos.php       # Vista de los paquetes turísticos
+├── 📄 script.js           # Lógica JavaScript del cliente
+├── 📄 styles.css          # Hoja de estilos de la aplicación
+├── 📄 vaciar.php          # Lógica para vaciar el carrito
+└── 📄 ver_*.php           # Scripts para visualizar datos de la BD
+```
 
-Issues: La discusión de problemas, bugs o nuevas ideas se gestiona a través de la pestaña "Issues".
+-----
+
+## 🤝 Colaboración
+
+Este proyecto se gestiona siguiendo las mejores prácticas de colaboración en GitHub.
+
+  * **Ramas (Branches):** El desarrollo de nuevas funcionalidades se realiza en ramas dedicadas.
+  * **Pull Requests (PRs):** Los cambios se proponen mediante Pull Requests para ser revisados por el equipo.
+  * **Issues:** Se utiliza para la gestión y discusión de tareas, errores y nuevas ideas.
+
