@@ -140,3 +140,6 @@ Este proyecto se gestiona siguiendo las mejores prácticas de colaboración en G
   * **Pull Requests (PRs):** Los cambios se proponen mediante Pull Requests para ser revisados por el equipo.
   * **Issues:** Se utiliza para la gestión y discusión de tareas, errores y nuevas ideas.
 
+Carlos Rojas Leiva 
+Estudiante del Instituto Profesional IACC
+Ingenieria Informatica 
