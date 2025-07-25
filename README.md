@@ -1,8 +1,4 @@
-agenciadeviaje
-¡Entendido! Para que tu README.md se vea más profesional y visualmente atractivo, podemos usar varios elementos de formato que ofrece Markdown, como insignias (badges), una tabla de contenidos y una estructura más organizada.
-
-Aquí tienes una versión mejorada. Simplemente copia y pega este código en tu archivo README.md.
-
+#agenciadeviaje
 🌎 Agencia de Viajes - Proyecto de Programación Web II
 Aplicación web para la gestión de una agencia de viajes, desarrollada como parte de la asignatura Programación Web II. El proyecto demuestra funcionalidades de backend con PHP y una base de datos MySQL, junto con un flujo de trabajo colaborativo en GitHub.
 
